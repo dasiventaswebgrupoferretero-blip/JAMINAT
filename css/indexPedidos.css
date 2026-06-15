@@ -1,0 +1,446 @@
+:root{
+    --rosa:#6B143B;
+    --verde:#00d084;
+    --blanco:#ffffff;
+    --oscuro:#0f172a;
+    --gris:#1e293b;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    background:linear-gradient(135deg,var(--oscuro),#111827);
+    color:var(--blanco);
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* HEADER */
+
+header{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:2rem 1rem;
+    gap:1rem;
+}
+
+header h1{
+    font-size:clamp(2rem,5vw,4rem);
+    color:white;
+    text-shadow:
+        0 0 10px var(--rosa),
+        0 0 20px var(--rosa);
+}
+
+.logo{
+    width:150px;
+    max-width:80%;
+    border-radius:50%;
+    border:3px solid var(--verde);
+    box-shadow:
+        0 0 20px var(--verde),
+        0 0 40px rgba(0,208,132,.4);
+}
+
+/* HAMBURGUESA */
+
+.hamburger{
+    position:fixed;
+    top:20px;
+    right:20px;
+    z-index:1000;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after{
+    background-color:var(--verde)!important;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after{
+    background-color:var(--rosa)!important;
+}
+
+/* MENÚ */
+
+.nav{
+    position:fixed;
+    top:0;
+    right:-100%;
+    width:280px;
+    height:100vh;
+    background:rgba(15,23,42,.98);
+    backdrop-filter:blur(10px);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    gap:2rem;
+    transition:.4s;
+    z-index:999;
+    border-left:2px solid var(--verde);
+}
+
+.nav.active{
+    right:0;
+}
+
+.nav a{
+    color:white;
+    text-decoration:none;
+    font-size:1.1rem;
+    transition:.3s;
+}
+
+.nav a:hover{
+    color:var(--verde);
+    text-shadow:0 0 15px var(--verde);
+}
+
+.nav img{
+    width:40px;
+}
+
+/* PROVEEDORES */
+
+.proveedores{
+    padding:3rem 1rem;
+    text-align:center;
+}
+
+.proveedores h2{
+    color:var(--verde);
+    margin-bottom:2rem;
+}
+
+.carrusel-proveedores{
+    overflow:hidden;
+}
+
+.track{
+    display:flex;
+    gap:2rem;
+    animation:scroll 30s linear infinite;
+}
+
+.track img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    background:white;
+    padding:10px;
+    border-radius:15px;
+}
+
+@keyframes scroll{
+    from{
+        transform:translateX(0);
+    }
+    to{
+        transform:translateX(-50%);
+    }
+}
+
+/* MAIN */
+
+main{
+    width:min(1200px,95%);
+    margin:auto;
+    padding:2rem 0;
+}
+
+/* BUSCADOR */
+
+input[type="search"]{
+    width:100%;
+    padding:1rem;
+    border:none;
+    border-radius:15px;
+    margin-bottom:2rem;
+    font-size:1rem;
+}
+
+/* PRODUCTOS */
+
+#productos{
+    display:grid;
+    grid-template-columns:repeat(auto-fill,minmax(280px,1fr));
+    gap:1.5rem;
+    margin-bottom:3rem;
+}
+
+/* FORMULARIO */
+
+form{
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:25px;
+    padding:2rem;
+}
+
+form h2{
+    text-align:center;
+    margin-bottom:1rem;
+}
+form h3{
+    text-align:center;
+    margin-bottom:1rem;
+    color:red;
+}
+form h2{
+    color:var(--verde);
+}
+
+form h3{
+    font-size:.95rem;
+    font-weight:400;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea{
+    width:100%;
+    padding:1rem;
+    margin:.7rem 0;
+    border:none;
+    border-radius:12px;
+    font-size:1rem;
+}
+
+textarea{
+    resize:vertical;
+}
+
+input[type="submit"]{
+    width:100%;
+    padding:1rem;
+    border:none;
+    border-radius:15px;
+    background:linear-gradient(
+        135deg,
+        var(--rosa),
+        var(--verde)
+    );
+    color:white;
+    font-size:1rem;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+input[type="submit"]:hover{
+    transform:translateY(-3px);
+    box-shadow:
+        0 0 15px var(--rosa),
+        0 0 25px var(--verde);
+}
+
+/* WHATSAPP */
+
+.btn-whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:12px 18px;
+    border-radius:50px;
+    z-index:1000;
+    box-shadow:0 0 20px #25D366;
+}
+
+.btn-whatsapp img{
+    width:35px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:2rem;
+    margin-top:3rem;
+    background:#0b1120;
+}
+
+/* IPHONE SE */
+
+@media(max-width:375px){
+
+    header{
+        padding-top:5rem;
+    }
+
+    header h1{
+        font-size:1.8rem;
+    }
+
+    .logo{
+        width:100px;
+    }
+
+    .track img{
+        width:80px;
+        height:80px;
+    }
+
+    .btn-whatsapp span{
+        display:none;
+    }
+
+    .btn-whatsapp{
+        padding:10px;
+    }
+
+    form{
+        padding:1.2rem;
+    }
+
+    #productos{
+        grid-template-columns:1fr;
+    }
+}
+
+/* PC */
+
+@media(min-width:992px){
+
+    header{
+        padding:3rem;
+    }
+
+    .logo{
+        width:180px;
+    }
+
+    form{
+        max-width:900px;
+        margin:auto;
+    }
+}
+.logo {
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+/* Contenedor de productos */
+#productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+/* Card */
+.producto-card {
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+    transition: all .3s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.producto-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+
+/* Imagen */
+.producto-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background: #f8fafc;
+    padding: 1rem;
+}
+
+/* Título */
+.producto-card h3 {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+    margin: 1rem 0 .5rem;
+    color: #1e293b;
+    min-height: 60px;
+}
+
+/* Marca */
+.producto-card .marca {
+    color: #6B143B;
+    font-weight: bold;
+    padding: 0 1rem;
+    margin-bottom: .5rem;
+}
+
+/* Descripción */
+.producto-card .descripcion {
+    color: #64748b;
+    font-size: .9rem;
+    line-height: 1.5;
+    padding: 0 1rem;
+    flex-grow: 1;
+}
+
+/* Precio */
+.producto-card .precio {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #16a34a;
+    padding: 0 1rem;
+    margin: 1rem 0;
+}
+
+/* Botón */
+.btn-solicitar {
+    margin: 0 1rem 1rem;
+    padding: .9rem;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #6B143B, #8f1c4f);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn-solicitar:hover {
+    background: linear-gradient(135deg, #8f1c4f, #b02463);
+    transform: scale(1.03);
+}
+
+.btn-solicitar:active {
+    transform: scale(.98);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #productos {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .producto-card img {
+        height: 180px;
+    }
+}

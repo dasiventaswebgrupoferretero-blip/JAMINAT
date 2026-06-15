@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMI NAT</title>
+    <link rel="stylesheet" href="./css/indexPedidos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <meta name="description" content="Somos una empresa especializada en la comercialización de productos naturistas, suplementos alimenticios, vitaminas, herbolaria, alimentos saludables y artículos para el bienestar integral. Nuestro objetivo es ofrecer productos de alta calidad que contribuyan al cuidado de la salud, el equilibrio del organismo y la mejora de la calidad de vida de nuestros clientes, brindando alternativas naturales para promover hábitos saludables y un bienestar duradero. ">
+    <link rel="icon" href="./assets/JAMINATLOGO.png">
+    <meta name="theme-color" content="#6B143B">
+    <meta property="og:title" content="¡Bienvenido a nuestros productos!">
+    <meta property="og:description" content="Encuentra nustros mejores productos.">
+    <meta property="og:image" content="https://dasiventaswebgrupoferretero-blip.github.io/Dasigrupoferretero/./assets/img/Productos.png">
+    <meta property="og:url" content="https://dasiventaswebgrupoferretero-blip.github.io/Dasigrupoferretero/index.html">
+</head>
+<body>
+    <header>
+        <h1>JAMI NAT</h1>
+        <img src="./assets/JAMINATLOGO.png" alt="DASILOGO" class="logo">
+        <!-- Sin botón aquí -->
+    </header>
+    <!-- Botón directo en body, fuera del header -->
+    <button class="hamburger hamburger--spin" type="button" id="btnMenu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <nav class="nav" id="navMenu">
+        <a href="productos.html">
+            <img src="./assets/carrito-de-compras.png" alt="carrito">
+        </a>
+        <a href="index.html">Página principal</a>
+    </nav>
+    <section class="proveedores">
+        <h2>Nuestros Proveedores</h2>
+        <div class="carrusel-proveedores">
+            <div class="track">
+                <img src="./assets/vidaNatLogo.png" alt="Proveedor 1">
+                <img src="./assets/ismerelyLogo.png" alt="Proveedor 2">
+                <img src="./assets/maryKayLogo.png" alt="Proveedor 3">
+                <img src="./assets/superNaturistaLogo.png" alt="Proveedor 4">
+                <img src="./assets/JAMINATLOGO.png" alt="Proveedor 5">
+                <!-- DUPLI./assets/TOS MISMOS LOGOS AQUÍ para el loop infinito -->
+                <img src="./assets/vidaNatLogo.png" alt="Proveedor 1">
+                <img src="./assets/ismerelyLogo.png" alt="Proveedor 2">
+                <img src="./assets/maryKayLogo.png" alt="Proveedor 3">
+                <img src="./assets/superNaturistaLogo.png" alt="Proveedor 4">
+                <img src="./assets/JAMINATLOGO.png" alt="Proveedor 5">
+                <!-- Y unatercera vara un desplazamiento más suave -->
+                <img src="./assets/vidaNatLogo.png" alt="Proveedor 1">
+                <img src="./assets/ismerelyLogo.png" alt="Proveedor 2">
+                <img src="./assets/maryKayLogo.png" alt="Proveedor 3">
+                <img src="./assets/superNaturistaLogo.png" alt="Proveedor 4">
+                <img src="./assets/JAMINATLOGO.png" alt="Proveedor 5">
+            </div>
+        </div>
+    </section>
+    <main>
+        <input type="search" placeholder="Buscar producto....">
+        <div id="productos"></div>
+        <form action="https://formsubmit.co/jamiventaswebnat@gmail.com" method="POST">
+            <h2>Formulario para hacer pedidos.</h2>
+            <h2>¡Escribe el producto que necesitas y nosotros nos ponemos en contacto contigo por WhatsApp o Correo electronico!</h2>
+            <h3>Realizamos entregas presenciales en el Estado de México, con cobertura en Valle de Chalco Solidaridad, Chalco, Ixtapaluca y municipios cercanos. Contáctanos para confirmar la disponibilidad de entrega en tu ubicación.</h3>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜ/s]+$" title="Nombre solo acepta letras y espacios en blanco" required><br>
+            <input type="number" name="numero" placeholder="Escribe tu numero de telefono" required><br>
+            <input type="email" name="correo" placeholder="Escribe tu correo" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Formato de correo invalido"  required>
+            <br>
+            <label for="producto">¡Escribe tu producto!</label><br>
+            <textarea name="producto" cols="20" rows="10" required></textarea>
+            <br>
+            <input type="submit">
+        </form>
+    </main> 
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/525613847822?text=Hola%21%20Vengo%20de%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos." 
+        class="btn-whatsapp" 
+        target="_blank" 
+        rel="noopener noreferrer">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        <span>¡Pide Ahora!</span>
+    </a>
+    <footer>
+        <p>&copy; 2026 JAMI NAT - Todos los derechos reservados</p>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./js/index.js" type="module"></script>
+</html>

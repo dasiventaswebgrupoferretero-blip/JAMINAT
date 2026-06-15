@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMI NAT</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
+    <meta name="description" content="Somos una empresa especializada en la comercialización de productos naturistas, suplementos alimenticios, vitaminas, herbolaria, alimentos saludables y artículos para el bienestar integral. Nuestro objetivo es ofrecer productos de alta calidad que contribuyan al cuidado de la salud, el equilibrio del organismo y la mejora de la calidad de vida de nuestros clientes, brindando alternativas naturales para promover hábitos saludables y un bienestar duradero.">
+    <link rel="icon" href="./assets/JAMINATLOGO.png">
+    <meta name="theme-color" content="#6B143B">
+    <meta property="og:title" content="¡JAMI NAT, nuestros mejores productos!">
+    <meta property="og:description" content="Ingresa ya y encuentra los mejores productos antes que todos. Ofertas, tendencias y novedades que no vas a querer perderte.">
+    <meta property="og:image" content="https://dasiventaswebgrupoferretero-blip.github.io/Dasigrupoferretero/./assets/Productos.png">
+    <meta property="og:url" content="https://dasiventaswebgrupoferretero-blip.github.io/Dasigrupoferretero/index.html">
+</head>
+<body>
+     <header>
+        <h1>JAMI NAT</h1>
+        <img src="./assets/JAMINATLOGO.png" alt="JAMINATLOGO" class="logo">
+        <!-- Sin botón aquí -->
+    </header>
+    <button class="hamburger hamburger--spin" type="button" id="btnMenu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <nav class="nav" id="navMenu">
+        <a href="productos.html">
+            <img src="./assets/carrito-de-compras.png" alt="carrito">
+        </a>
+        <a href="index.html#nuestras-categorias">Marcas</a>
+        <a href="index.html#sobre-nosotros">Sobre nosotros</a>
+        <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <section class="proveedores">
+        <h2>Nuestros Proveedores</h2>
+        <div class="carrusel-proveedores">
+            <div class="track">
+                <img src="./assets/vidaNatLogo.png" alt="Proveedor 1">
+                <img src="./assets/ismerelyLogo.png" alt="Proveedor 2">
+                <img src="./assets/maryKayLogo.png" alt="Proveedor 3">
+                <img src="./assets/superNaturistaLogo.png" alt="Proveedor 4">
+                <img src="./assets/JAMINATLOGO.png" alt="Proveedor 5">
+                <!-- DUPLI./assets/TOS MISMOS LOGOS AQUÍ para el loop infinito -->
+                <img src="./assets/vidaNatLogo.png" alt="Proveedor 1">
+                <img src="./assets/ismerelyLogo.png" alt="Proveedor 2">
+                <img src="./assets/maryKayLogo.png" alt="Proveedor 3">
+                <img src="./assets/superNaturistaLogo.png" alt="Proveedor 4">
+                <img src="./assets/JAMINATLOGO.png" alt="Proveedor 5">
+                <!-- Y unatercera vara un desplazamiento más suave -->
+                <img src="./assets/vidaNatLogo.png" alt="Proveedor 1">
+                <img src="./assets/ismerelyLogo.png" alt="Proveedor 2">
+                <img src="./assets/maryKayLogo.png" alt="Proveedor 3">
+                <img src="./assets/superNaturistaLogo.png" alt="Proveedor 4">
+                <img src="./assets/JAMINATLOGO.png" alt="Proveedor 5">
+            </div>
+        </div>
+        <main>
+        <h2 class="categorias" id="nuestras-categorias">Nuestras categorías</h2>
+        <div id="categorias-container" class="categorias-container"></div>
+        <div class="pedido">
+        <h2>Formulario para hacer pedidos.</h2>
+        <h2>¡Escribe el producto que necesitas y nosotros nos ponemos en contacto contigo por WhatsApp o Correo electronico!</h2>
+        <h3>Realizamos entregas presenciales en el Estado de México, con cobertura en Valle de Chalco Solidaridad, Chalco, Ixtapaluca y municipios cercanos. Contáctanos para confirmar la disponibilidad de entrega en tu ubicación.</h3>
+        <form action="https://formsubmit.co/jamiventaswebnat@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜ/s]+$" title="Nombre solo acepta letras y espacios en blanco" required><br>
+            <input type="number" name="numero" placeholder="Escribe tu numero de telefono" required><br>
+            <input type="email" name="correo" placeholder="Escribe tu correo" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Formato de correo invalido"  required>
+            <br>
+            <label for="producto">¡Escribe tu producto!</label><br>
+            <textarea name="producto" cols="20" rows="10" required></textarea>
+            <br>
+            <input type="submit">
+        </form>
+        </div>
+        <!-- Secciones adicionales -->
+        <section class="about-section" id="sobre-nosotros">
+            <h2>Sobre Nosotros</h2>
+            <div class="about-container">
+                <div class="about-image">
+            <img src="./assets/JAMINAT-negocio.png" alt="Nuestros productos">
+            </div>
+            <div class="about-text">
+                <p class="about-description">Somos una empresa especializada en la comercialización de productos naturistas, suplementos alimenticios, vitaminas, herbolaria, alimentos saludables y artículos para el bienestar integral. Nuestro objetivo es ofrecer productos de alta calidad que contribuyan al cuidado de la salud, el equilibrio del organismo y la mejora de la calidad de vida de nuestros clientes, brindando alternativas naturales para promover hábitos saludables y un bienestar duradero.</p>
+                <p class="delivery-info">Realizamos entregas presenciales en el Estado de México, con cobertura en Valle de Chalco Solidaridad, Chalco, Ixtapaluca y municipios cercanos. Contáctanos para confirmar la disponibilidad de entrega en tu ubicación.</p>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="contact-section" id="contacto">
+            <h2>Contacto</h2>
+            <p>📞 Teléfono: 525613847822</p>
+            <p>📧 Email: jamiventaswebnat@gmail.com</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!4v1780615320789!6m8!1m7!1sQ3Iy1Z7INMyDZM4Ap39V-w!2m2!1d19.28676673717338!2d-98.93163703887075!3f295.8453!4f0!5f0.7820865974627469" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </footer>
+    <!-- Botón flotante de WhatsApp -->
+    <a href="https://wa.me/5215613847822?text=Hola%21%20Vengo%20de%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20productos." 
+        class="btn-whatsapp" 
+        target="_blank" 
+        rel="noopener noreferrer">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+        <span>¡Pide Ahora!</span>
+    </a>
+    <p>&copy; 2026 JAMI NAT - Todos los derechos reservados</p>
+    </section>
+</body>
+<script src="./js/index.js" type="module"></script>
+</html>
