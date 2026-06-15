@@ -1,5 +1,5 @@
 :root{
-    --rosa:#6B143B;
+    --rosa:#40f528;
     --verde:#00d084;
     --blanco:#ffffff;
     --oscuro:#0f172a;
@@ -387,7 +387,7 @@ footer{
 
 /* Marca */
 .producto-card .marca {
-    color: #6B143B;
+    color: #40f528;
     font-weight: bold;
     padding: 0 1rem;
     margin-bottom: .5rem;
@@ -417,7 +417,7 @@ footer{
     padding: .9rem;
     border: none;
     border-radius: 12px;
-    background: linear-gradient(135deg, #6B143B, #8f1c4f);
+    background: linear-gradient(135deg, #82ff2f, #40f528);
     color: white;
     font-weight: bold;
     cursor: pointer;
@@ -425,7 +425,7 @@ footer{
 }
 
 .btn-solicitar:hover {
-    background: linear-gradient(135deg, #8f1c4f, #b02463);
+    background: linear-gradient(135deg, #40f528, #5ef17e);
     transform: scale(1.03);
 }
 

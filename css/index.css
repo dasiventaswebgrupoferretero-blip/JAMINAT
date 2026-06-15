@@ -1,6 +1,6 @@
 /* ===== VARIABLES ===== */
 :root{
-    --rosa:#C2185B;
+    --rosa:#26c218;
     --verde:#00C896;
     --blanco:#FFFFFF;
     --oscuro:#0f172a;
@@ -84,9 +84,9 @@ header h1{
     border-radius: 14px;
     background: linear-gradient(
         45deg,
-        #6B143B,
-        #ff4fa3,
-        #6B143B
+        #286b14,
+        #0bcc9c,
+        #028b37
     );
     z-index: -1;
     filter: blur(10px);
@@ -394,7 +394,7 @@ iframe{
 .card-content:hover {
     transform: translateY(-8px);
     box-shadow: 0 15px 35px rgba(0,0,0,.2);
-    border-color: #6B143B;
+    border-color: #17d375;
 }
 
 /* Imagen */
@@ -408,7 +408,7 @@ iframe{
 
 /* Título */
 .card-title {
-    color: #6B143B;
+    color: #3bda26;
     font-size: 1.6rem;
     margin: 1rem 0 .5rem;
     font-weight: 700;
@@ -428,7 +428,7 @@ iframe{
     padding: .9rem 1.8rem;
     border: none;
     border-radius: 50px;
-    background: linear-gradient(135deg, #6B143B, #8F1B50);
+    background: linear-gradient(135deg, #146b27, #1dd845);
     color: white;
     font-size: 1rem;
     font-weight: 600;
@@ -438,7 +438,7 @@ iframe{
 
 .card-button:hover {
     transform: scale(1.05);
-    background: linear-gradient(135deg, #8F1B50, #6B143B);
+    background: linear-gradient(135deg, #1b8f2b, #16a535);
 }
 .delivery-info {
     font-size: 1.5rem;
