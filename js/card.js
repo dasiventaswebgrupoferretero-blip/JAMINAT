@@ -16,11 +16,6 @@ export default function cards(id) {
             titulo: "Ismerely",
             descripcion: "Encuentra todos nuestros productos de la marca Ismerely.",
             img: "./assets/ismerelyLogo.png"
-        },
-        {
-            titulo: "Super Naturista",
-            descripcion: "Encuentra todos nuestros productos de la marca Super Naturista.",
-            img: "./assets/superNaturistaLogo.png"
         }
     ];
     const container = d.getElementById(id);
@@ -31,7 +26,7 @@ export default function cards(id) {
     }
     container.innerHTML = categoria.map(categorias => `
         <div class="card-content">
-            <img src="${categorias.img}" alt="${categorias.titulo}" class="card-img" style="width:100%; height:200px; object-fit:cover; border-radius:10px;">
+            <img src="${categorias.img}"alt="${categorias.titulo}" class="card-img">
             <h3 class="card-title">${categorias.titulo}</h3>
             <p class="card-text">${categorias.descripcion}</p>
             <button class="card-button" data-marca="${categorias.titulo}">Ver más</button>
